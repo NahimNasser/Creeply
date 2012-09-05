@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="/static/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/static/styles.css" />
+    <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" charset="utf-8">
+
+    $(document).ready(function(){
+        $(".title").fadeIn(1500);
+        $(".quote").delay(1000).fadeIn(1500);
+        $(".button-link").delay(1500).fadeIn(500);
+    });
+
+    </script>
+</head>
+
+<body class=radialRedGradient>
+
+    <div class=centeredDiv>
+    <h1 class=title centerText>creep</h1>
+    <p class=quote centerText>giving data back to the people</p>
+    <a class=button-link href={{ fbconnect_url }}>Donate Now</a>
+    </div>
+
+</body>
+
+</html>
