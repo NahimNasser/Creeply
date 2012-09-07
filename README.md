@@ -20,6 +20,6 @@ Steps to get up and running:
 
 3. Navigate to hobby/env and then run ```source bin/activate``` to fire up the virtual environment
 
-4.```python manage.py runserver 8000``` to begin running the server at http://creeply.dev:8000
+4. ```python manage.py runserver 8000``` to begin running the server at http://creeply.dev:8000
 
 5. Sell your soul to creeply.
