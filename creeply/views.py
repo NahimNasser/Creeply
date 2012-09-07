@@ -23,6 +23,8 @@ def fblogin(request):
         action, user = connect_user(request, facebook_graph=graph)
         user.save()
         graph = get_facebook_graph(access_token=user.get_profile().access_token)
+        graph_data = graph.get('/me')
         t = loader.get_template("profile.html")
-        c = Context({'fbconnect_url': user.get_profile().image.url})
+        graph_data['img'] = 'https://graph.facebook.com/%s/picture?type=large' % user.get_profile().facebook_id
+        c = Context(graph_data)
         return HttpResponse(t.render(c))
