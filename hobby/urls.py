@@ -6,6 +6,7 @@ from creeply import views as c
 
 urlpatterns = patterns('',
     url(r'^$', c.home, name='home'),
+    url(r'^linkedin/login/?$', c.lilogin, name='lilogin'),
     url(r'^facebook/login/?$', c.fblogin, name='fblogin'),
     url(r'^facebook/', include('django_facebook.urls')),
     url(r'^accounts/', include('django_facebook.auth_urls')),
