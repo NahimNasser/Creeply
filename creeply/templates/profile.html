@@ -19,13 +19,19 @@
 <body class=radialRedGradient>
 
     <div class=centeredDiv>
-    <h1> {{ name }} </h1>
-    <img src={{ img }}></img>
-    <h2> Born: {{ hometown.name }} </h2>
-    <h2> Gender: {{ gender }}</h2>
-    <h2> Speaks: {{ languages }}</h2>
-    <h2> Favourite Quotes: {{ quotes }}</h2>
-    <h2> Current Location: {{ location.name }}</h2>
+    <h1 class=title centerText> {{ name }} </h1>
+    
+    <div class=half>
+    <img src={{ img }} class=profileImage></img> 
+    </div>
+
+    <div class=half>
+    <h2 class=fbDetail> <strong class=black>Born:</strong> {{ hometown.name }} </h3>
+    <h2 class=fbDetail> <strong class=black>Gender:</strong> {{ gender }}</h3>
+    <h2 class=fbDetail> <strong class=black>Speaks:</strong> {{ languages }}</h3>
+    <h2 class=fbDetail> <strong class=black>Favourite Quotes:</strong> {{ quotes }}</h3>
+    <h2 class=fbDetail> <strong class=black>Current Location:</strong> {{ location.name }}</h3>
+    </div>
 
     </div>
 

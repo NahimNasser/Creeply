@@ -12,6 +12,18 @@
 h1, h2, .quote {
       font-family: 'Courgette', cursive;
 }
+.half{
+  float: left;
+  width: 50%;
+}
+
+.fbDetail {
+    text-align: left;
+    color:white;
+    font-size:20px;
+    text-shadow: 1px 1px 1px #000000;
+    filter: dropshadow(color=#000000, offx=2, offy=2);
+}
 
 .title{
     display: none;
@@ -28,10 +40,10 @@ h1, h2, .quote {
     top: 30%;
 }
 
-.title:after{
-    content: "ly";
+.black{
     color: black;
 }
+
 
 .orangeGradient{
       background-color: #ff901e;
@@ -97,4 +109,10 @@ h1, h2, .quote {
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
     background: #2E5481;
     border: solid 1px #203E5F;
+}
+
+.profileImage {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
 }
