@@ -9,6 +9,11 @@ We will pull in data from
 
 To build a context for a user
 
+##Libraries/Frameworks used:
+* Django (https://www.djangoproject.com/)
+* Django Facebook (https://github.com/tschellenbach/Django-facebook)
+* Python-linked-in (http://code.google.com/p/python-linkedin/)
+
 ##Setup/Configuration
 Creeply is run on a virtualenv, and requires a MySQL database server
 
