@@ -40,7 +40,8 @@ def fblogin(request):
 
 def lilogin(request):
         liApi = linkedin.LinkedIn('d4sg4uq23heb', 'CECqmTcwYr9GZod5', 'http://creeply.dev:8000/linkedin/login')
-        import ipdb; ipdb.set_trace()
         liApi.access_token(request_token=request.user.liProfile.request_token.encode('utf8'), request_token_secret=request.user.liProfile.request_token_secret.encode('utf8'), verifier=request.GET['oauth_verifier'])
         liProfile = liApi.get_profile()
-        return HttpResponse()
+        t = loader.get_template("profile.html")
+        c = Context(liProfile)
+        return HttpResponse(t.render(c))
